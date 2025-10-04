@@ -40,9 +40,7 @@ export async function signUp(req: Request,res: Response) {
                 message: "User Signed Up Successfully"
             })
             return;
-        }
-
-        
+        }        
 
     } catch (error) {
         console.log(error);
@@ -52,11 +50,8 @@ export async function signUp(req: Request,res: Response) {
         return
         
     }
-
-
-
-    
 }
+
 export async function signIn(req: Request,res: Response){
     try {
         const body = SignInSchema.safeParse(req.body);

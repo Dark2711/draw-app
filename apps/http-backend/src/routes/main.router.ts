@@ -6,6 +6,6 @@ import { authMiddleware } from '../middlewares/auth.middleware';
 const mainRouter: Router = Router();
 
 mainRouter.use('/auth', authRouter);
-// mainRouter.use('/room',authMiddleware, roomRouter)
+mainRouter.use('/room',authMiddleware, roomRouter)
 
 export default mainRouter;
